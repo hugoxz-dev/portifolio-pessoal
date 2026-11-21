@@ -76,8 +76,8 @@ export function Hero() {
           <div className="absolute -inset-4 rounded-[2.5rem] border border-accent/20 rotate-6" />
           <div className="relative aspect-square overflow-hidden rounded-[2rem] border-[6px] border-white bg-accent-soft shadow-card dark:border-stone-800 dark:bg-stone-900">
             <Image
-              src="/images/avatar-placeholder.svg"
-              alt="Ilustração de pessoa, substitua por sua foto de perfil"
+              src={profile.avatarUrl}
+              alt={`Foto de perfil de ${profile.name}`}
               fill
               priority
               sizes="(max-width: 640px) 80vw, (max-width: 1024px) 50vw, 390px"

@@ -43,15 +43,10 @@ Atualize o título, a descrição, os dados Open Graph e o domínio em `app/layo
 O formulário valida nome, e-mail e mensagem no cliente e no servidor. Para enviar e-mails, preencha `.env.local`:
 
 ```env
-RESEND_API_KEY=re_...
-CONTACT_TO_EMAIL=seu-email@exemplo.com
-CONTACT_FROM_EMAIL=Portfolio <contato@seudominio.com>
 NEXT_PUBLIC_SITE_URL=https://seudominio.com
 ```
 
-Crie uma API key no Resend e verifique seu domínio para usar o endereço `CONTACT_FROM_EMAIL`. O endereço de teste `onboarding@resend.dev` é limitado pelo Resend e não deve ser usado como remetente de produção. Sem as três variáveis de e-mail, o formulário informa que não está configurado; e-mail, WhatsApp e LinkedIn permanecem disponíveis como alternativas.
-
-Nunca use prefixo `NEXT_PUBLIC_` para a chave secreta do Resend.
+A seção de contato oferece links diretos para e-mail, WhatsApp, LinkedIn e GitHub.
 
 ## Publicação na Vercel
 
